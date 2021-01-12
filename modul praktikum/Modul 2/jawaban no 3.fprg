@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="LENOVO"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2020-11-10 12:00:46 "/>
+        <attribute name="created" value="TEVOT1ZPO0xFTk9WTy1QQzsyMDIwLTExLTEwOyIxMTowOTo1NiAiOzIzMTA="/>
+        <attribute name="edited" value="TEVOT1ZPO0xFTk9WTy1QQzsyMDIwLTExLTEwOyIxMjowMDo0NiAiOzg7MjQxNg=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="ap, i" type="Integer" array="False" size=""/>
+            <output expression="&quot;untuk menentukan bilangan prima atau bukan&quot;" newline="True"/>
+            <output expression="&quot;masukkan Angka&quot;" newline="True"/>
+            <input variable="ap"/>
+            <if expression="ap &gt; 1">
+                <then>
+                    <for variable="i" start="2" end="ap-1" direction="inc" step="1">
+                        <if expression="ap Mod i == 0">
+                            <then>
+                                <output expression="ap&amp;&quot; adalah bukan bilangan prima&quot;" newline="True"/>
+                                <breakpoint/>
+                            </then>
+                            <else/>
+                        </if>
+                    </for>
+                    <output expression="ap&amp;&quot; adalah bilangan prima&quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="ap&amp;&quot; bukan adalah bilangan prima&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

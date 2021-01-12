@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="LENOVO"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2020-11-10 12:24:49 "/>
+        <attribute name="created" value="TEVOT1ZPO0xFTk9WTy1QQzsyMDIwLTExLTEwOyIwOToxMzoyMSAiOzIzMDQ="/>
+        <attribute name="edited" value="TEVOT1ZPO0xFTk9WTy1QQzsyMDIwLTExLTEwOyIxMjoyNDo0OSAiOzQ7MjQyMQ=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="a, b, c, d, temp, sn, n, un" type="Integer" array="False" size=""/>
+            <output expression="&quot;masukkan suku awal&quot;" newline="True"/>
+            <input variable="a"/>
+            <output expression="&quot;masukkan beda&quot;" newline="True"/>
+            <input variable="b"/>
+            <output expression="&quot;total&quot;" newline="True"/>
+            <input variable="d"/>
+            <assign variable="temp" expression="0"/>
+            <assign variable="sn" expression="0"/>
+            <assign variable="n" expression="0"/>
+            <assign variable="c" expression="0"/>
+            <while expression="sn + c &lt; d">
+                <assign variable="temp" expression="temp + 1"/>
+                <assign variable="n" expression="n + 1"/>
+                <assign variable="un" expression="a + (n-1)*b"/>
+                <assign variable="c" expression="un"/>
+                <assign variable="sn" expression="sn + un"/>
+                <output expression="&quot;suku ke- &quot;&amp;temp&amp;&quot; &quot;&amp;&quot;= &quot;&amp;un&amp;&quot; &quot;&amp;&quot;total =&quot;&amp;&quot; &quot; &amp; sn" newline="True"/>
+            </while>
+        </body>
+    </function>
+</flowgorithm>

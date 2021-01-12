@@ -1,0 +1,87 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="T U F"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2020-11-10 12:15:34 "/>
+        <attribute name="created" value="VCBVIEY7TEFQVE9QLU4yTlFLNk1DOzIwMjAtMTEtMTA7MTA6MDE6MjcgQU07MjYxOQ=="/>
+        <attribute name="edited" value="VCBVIEY7TEFQVE9QLU4yTlFLNk1DOzIwMjAtMTEtMTA7MTA6MzY6NDUgQU07NDsyNzM4"/>
+        <attribute name="edited" value="TEVOT1ZPO0xFTk9WTy1QQzsyMDIwLTExLTEwOyIxMjoxNTozNCAiOzY7MjQxNw=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="start" type="Boolean" array="False" size=""/>
+            <declare name="r, lL, lp, phi, opsi, p, l, lpp, t, ls, a" type="Integer" array="False" size=""/>
+            <declare name="perintah" type="String" array="False" size=""/>
+            <assign variable="start" expression="True"/>
+            <while expression="start">
+                <output expression="&quot;masukkan =&gt; y jika ingin memulai&quot;" newline="True"/>
+                <input variable="perintah"/>
+                <if expression="perintah==&quot;y&quot;">
+                    <then>
+                        <output expression="&quot;ketik 1 untuk luas lingkaran&quot;" newline="True"/>
+                        <output expression="&quot;ketik 2 untukluas persegi&quot;" newline="True"/>
+                        <output expression="&quot;ketik 3 untuk luas segitiga&quot;" newline="True"/>
+                        <output expression="&quot;ketik 4 untuk keluar&quot;" newline="True"/>
+                        <input variable="opsi"/>
+                        <if expression="opsi==1">
+                            <then>
+                                <output expression="&quot;masukkan jari-jari&quot;" newline="True"/>
+                                <input variable="r"/>
+                                <assign variable="phi" expression="22/7"/>
+                                <assign variable="lL" expression="phi*r*r"/>
+                                <output expression="&quot;luas lingkaran=&quot;&amp;lL" newline="True"/>
+                            </then>
+                            <else>
+                                <if expression="opsi==2">
+                                    <then>
+                                        <output expression="&quot;masukkan panjang&quot;" newline="True"/>
+                                        <input variable="p"/>
+                                        <output expression="&quot;masukkan lebar&quot;" newline="True"/>
+                                        <input variable="l"/>
+                                        <assign variable="lpp" expression="p*l"/>
+                                        <output expression="&quot;luas persegi panjang adalah &quot;&amp;lpp" newline="True"/>
+                                    </then>
+                                    <else>
+                                        <if expression="opsi==3">
+                                            <then>
+                                                <output expression="&quot;masukkan alas&quot;" newline="True"/>
+                                                <input variable="a"/>
+                                                <output expression="&quot;masukkan tingii &quot;" newline="True"/>
+                                                <input variable="t"/>
+                                                <assign variable="ls" expression="1/2*a*t"/>
+                                                <output expression="&quot;luas segitiga adalah &quot;&amp;ls" newline="True"/>
+                                            </then>
+                                            <else>
+                                                <if expression="opsi=4">
+                                                    <then>
+                                                        <assign variable="start" expression="False"/>
+                                                    </then>
+                                                    <else>
+                                                        <if expression="opsi &gt;= 5">
+                                                            <then>
+                                                                <output expression="&quot;pilih yg sesuai&quot;" newline="True"/>
+                                                                <assign variable="start" expression="True"/>
+                                                            </then>
+                                                            <else/>
+                                                        </if>
+                                                    </else>
+                                                </if>
+                                            </else>
+                                        </if>
+                                    </else>
+                                </if>
+                            </else>
+                        </if>
+                    </then>
+                    <else>
+                        <output expression="&quot;masukan salah mohon diulangi&quot;" newline="True"/>
+                        <assign variable="start" expression="True"/>
+                    </else>
+                </if>
+            </while>
+        </body>
+    </function>
+</flowgorithm>
